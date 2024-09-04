@@ -12,7 +12,5 @@ fi
 if [ -n "$DISABLE_OTELCOL" ]; then
   echo "The OpenTelemetry Collector agent has been disabled. Unset the \$DISABLE_OTELCOL or set missing environment variables."
 else
-  echo "-----> validating otelcol config file"
-  bash -c "otelcol validate --config $APP_OTELCOL/config.yml"
   bash -c "otelcol --config $APP_OTELCOL/config.yml 2>&1 &"
 fi
