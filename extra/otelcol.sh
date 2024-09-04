@@ -10,7 +10,7 @@ if [ -e "$PRERUN_SCRIPT" ]; then
 fi
 
 if [ -n "$DISABLE_OTELCOL" ]; then
-  echo "The OpenTelemetry Collector agent has been disabled. Unset the $DISABLE_OTELCOL or set missing environment variables."
+  echo "The OpenTelemetry Collector agent has been disabled. Unset the \$DISABLE_OTELCOL or set missing environment variables."
 else
   bash -c "otelcol --config $APP_OTELCOL/config.yml 2>&1 &"
 fi

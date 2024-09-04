@@ -2,6 +2,8 @@
 
 This [Heroku buildpack][1] installs OpenTelemetry Collector in your Heroku dyno to collect app metrics and traces.
 
+It is a fork of https://github.com/Djiit/heroku-buildpack-otelcol
+
 ## Configuration
 
 This buildpack assumes that otel collector config file is located at `/otelcol/config.yml` in your application.
