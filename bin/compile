@@ -61,4 +61,4 @@ chmod +x "$BUILD_DIR/.profile.d/otelcol.sh"
 
 # validate the config
 echo "-----> validating otelcol config file"
-otelcol validate --config $APP_OTELCOL/config.yml
+$BUILD_DIR/bin/otelcol validate --config $APP_OTELCOL/config.yml
